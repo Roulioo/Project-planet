@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+    <html lang="fr">
+
+        <head>
+
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Page de voyage</title>
+
+            <!-- Appels des fonts utilisées -->
+            <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+        
+            <!-- Appels des styles utilisées -->
+            <link href="style/reset.css" rel="stylesheet">
+            <link href="style/voyage.css" rel="stylesheet">
+
+        </head>
+
+        <body>
+
+            <header>    
+
+                <a href="index.html"><img src="images/logo/logo.png" alt="logo"/></a><a href="index.html"><span class="terre_lune">TERRE / LUNE </span></a>
+
+                <nav class="navigation">
+
+                    <ul>
+                        <li class="introduction"><a href="index.html">Introduction</a></li>
+                        <li class="espace"><a href="espace.html">Vue de l'espace</a></li>
+                        <li class="voyage"><a href="voyage.html">Le voyage</a></li>
+                    </ul>            
+
+                </nav>
+
+            </header>
+
+            <section class="slider">
+
+                <p class="text">
+                    Faisons le voyage ensemble <br>
+                    A l’aide du slider, sélectionnez la vitesse que vous désirez pour faire le voyage de la Terre à la Lune. <br> Nous calculerons pour vous la durée du voyage et le mode de transport qui correspond.
+                </p>
+
+                <!-- Range slider -->
+
+                <input type="range" min="10" max="5500" value="2740" class="slide" id="myRange">
+
+            </section>
+
+            <h1><strong>Value in km/h : </strong> <span id="value"></span></h1> 
+
+            <section class="tableau">
+
+                <table>
+
+                    <tr>
+                        <td id="homme">Homme à pied</td>
+                        <td>10 km/h</td>
+                    </tr>
+                    
+                    <tr>
+                        <td id="cheval">Cheval pur-sang</td>
+                        <td>65 km/h</td>
+                    </tr>
+                    
+                    <tr>
+                        <td id="voiture">Voiture ferrari</td>
+                        <td>325 km/h</td>
+                    </tr>
+                    
+                    <tr>
+                        <td id="avion_jet">Avion jet</td>
+                        <td>740 km/h</td>
+                    </tr>
+
+                    <tr>
+                        <td id="avion_ligne">Avion de ligne A380</td>
+                        <td>1185 km/h</td>
+                    </tr>
+
+                    <tr>
+                        <td id="fusee">Fusée Apollo 11</td>
+                        <td>5500 km/h</td>
+                    </tr>
+
+                <table>
+
+                <p id = "objet">
+                    <strong>Mode de transport adéquat :</strong> <span id="objet_choisit"></span>
+                </p>
+
+                <p id = "temps">
+                    <strong>Temps de voyage :</strong> <span id="temps_voyage"></span>
+                </p>
+
+            </section>
+
+            <script src="js/voyage.js"></script>
+
+        </body>
+
+    </html>

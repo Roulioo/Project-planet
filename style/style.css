@@ -1,0 +1,224 @@
+/****** FIRST PAGE *****/
+
+/* Decoration de nos liens */
+
+.navigation a{
+    text-decoration: none;
+    color:black
+}
+
+/* Positionnement de notre TEXTE / LUNE */
+
+header a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Courgette', cursive;
+    font-size: 15px;
+}
+
+header a:nth-child(2){
+    font-family: 'Courgette', cursive;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+/* Créer un trait horizontale sur la page + éviter les collisions */
+
+header{
+    display: flex;
+    border-bottom: 2px solid black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Display nos éléments ul les uns à coté des autres */
+
+header .navigation ul{
+    display: flex;
+}
+
+/* Gérer l'espace entre chaque mot de la navigation */
+
+.navigation ul a{
+    margin-left: 30px;
+}
+
+/* Permet de rapprocher nos éléments li pret de notre logo verticalement */
+
+.navigation ul li{
+    margin-top: 15px;
+}
+
+/* Gérer le margin seulement du contenue et non l'ensemble sinon notre bordure est décalée */
+
+header a, 
+header .navigation{
+    margin-left: 5px;
+}
+
+/* Positionnement du titre et du texte du début sur la planète */
+
+.background-earth .first-page .titre {
+    position:absolute;
+    left: 475px;
+	top: 300px;
+    font-size: 50px;
+    font-family: 'Bangers', cursive;
+    color:white;
+}
+
+.background-earth .first-page .texte {
+    position:absolute;
+    left: 295px;
+    width: 56%;
+	top: 400px;
+    font-size: 30px;
+    text-align: center;
+    color:white;
+    font-family: 'Dancing Script', cursive;
+}
+
+.background-earth .first-page img {
+    width: 100%;
+}
+
+/****** SECOND PAGE *****/
+
+/* Positionnement de nos 3 images avec flex */
+
+.all-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alignement des flexs items */
+}
+
+/* Gérer le positionnement des deux images qui seront à droite*/
+
+.all-section .first-section,
+.all-section .third-section{
+    margin-left:750px;
+}
+
+/* Caractéristique du premier et troisième éléments */
+
+.all-section .first-section h1,
+.all-section .third-section h1,
+.all-section .first-section p,
+.all-section .third-section p {
+    margin-top:10px;
+}
+
+.all-section .first-section{
+    margin-top: 50px;
+}
+
+.all-section .first-section p{
+    font-style: italic;
+}
+
+.all-section .third-section p{
+    font-style: italic;
+    margin-bottom: 47px;
+}
+
+.all-section .first-section,
+.all-section .third-section{
+    margin-right: 50px;
+}
+
+.all-section h1{
+    font-family: 'Bangers', cursive;
+    font-size: 20px;
+}
+
+/* Caractéristique du deuxième élément */
+
+.all-section .second-section h1,
+.all-section .second-section p{
+    margin-top: 10px;
+    width: 40%;
+}
+
+.all-section .second-section p{
+    font-style: italic;
+}
+
+.all-section .second-section{
+    margin-left: 50px;
+}
+
+/****** THIRD PAGE *****/
+
+.background-moon .third-page img:first-child {
+    width: 100%
+}
+
+/* Positionnement des deux logos et du contenue texte sur la dernière page */
+
+.background-moon .third-page .logo-cnes {
+    position:absolute;
+    left: 495px;
+    top: 2640px;
+}
+
+.background-moon .third-page .logo-ecole {
+    position:absolute;
+    left: 690px;
+    top: 2640px;
+}
+
+.background-moon .third-page .text {
+    position:absolute;
+    width: 50%;
+    left: 320px;
+    top: 2725px;
+    color:white;
+    text-align: center;
+    font-style: italic;
+}
+
+.background-moon .text{
+    font-size: 16px;
+}
+
+/* Créer un effet de gradient sur le millieu de la page */
+
+.all-section{
+    background: linear-gradient(to top, #333, #eee 95%);
+}
+
+/* Positionnement de la barre verticale */
+
+.line{
+    position: absolute;
+    height: 1100px;
+    top:249px;
+    margin-top: 550px;
+    padding-right: 640px;
+    border-right: 4px dashed black;
+}
+
+/* Positionnement circle 1 */
+
+.circle-1 {
+    position: absolute;
+    left:634.5px;
+    top:780px;
+    background: black;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+}
+
+/* Positionnement circle 2 */
+
+.circle-2 {
+    position: absolute;
+    left:634.5px;
+    top:1902px;
+    background: black;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+}

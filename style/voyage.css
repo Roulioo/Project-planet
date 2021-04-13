@@ -1,0 +1,236 @@
+/****** THIRD PAGE *****/
+
+body{
+    background: linear-gradient(#abbaab, #ffffff);
+}
+
+/* Decoration de nos liens */
+
+.navigation a{
+    text-decoration: none;
+    color:black
+}
+
+/* Positionnement de notre TEXTE / LUNE */
+
+header a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Courgette', cursive;
+    font-size: 15px;
+}
+
+header a:nth-child(2){
+    font-family: 'Courgette', cursive;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+/* Créer un trait horizontale sur la page + collisions */
+
+header{
+    display: flex;
+    border-bottom: 2px solid black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Display nos éléments ul les uns à coté des autres */
+
+header .navigation ul{
+    display: flex;
+}
+
+/* Gérer l'espace entre chaque mot de la navigation */
+
+.navigation ul a{
+    margin-left: 30px;
+}
+
+/* Permet de rapprocher nos éléments li pret de notre logo verticalement */
+
+.navigation ul li{
+    margin-top: 15px;
+}
+
+/* Gérer le margin seulement du contenue et non l'ensemble sinon notre bordure est décalée */
+
+header a, 
+header .navigation{
+    margin-left: 5px;
+}
+
+/* Positionnement du texte d'accompagnement */
+
+.slider .text{
+    width: 41%;
+    margin-left: 30px;
+    margin-top:200px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+
+/* Positionnement en flex du slider */
+
+.slider{
+    display: flex;   
+    align-items: center; /* Aligner les items flex au centre */
+}
+
+/* Un peu de style sur le texte */
+
+.slider .text{
+    font-style: italic;
+}
+
+/* Positionnement et caractéristique du slider */
+
+.slider .slide{
+    margin-left: 170px;
+    margin-top:126px;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 30%;  
+}
+
+/* Ligne autour du slide c'est les outline */
+
+input[type=range]:focus {
+    outline: none; 
+}
+
+/* Création du trait bleu horizontale */
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 50%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #3071a9;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+}
+
+/* Création du boutton centrale avec l'épaisseur rectangulaire */
+
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 34px;
+    width: 10px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -14px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+/* Coulour modifiée lors du focus sur le slider */
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #367ebd;
+}
+
+/* Gérer le positionnement de la valeur de l'event */
+
+.tableau:nth-last-child(){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left:590px;
+}
+
+/* Placement de value */
+
+h1{
+    text-align: right;
+    margin-right: 250px;
+    margin-bottom: 30px;
+}
+
+strong{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Gérer espacement entre tab et val*/
+
+.tableau{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 480px;
+}
+
+/* Gérer la taille sinon prend tous l'écran */
+
+.tableau table{
+    width: 40%;
+    margin-bottom: 30px;
+}
+
+/* Bordure au sein de notre tableau */
+
+.tableau td{
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+/* Positionnement de table */
+
+.tableau table{
+    margin-left: 70px;
+}
+
+/* Positionnement ensemble tableau + texte */
+
+h1,
+.tableau{
+    margin-top: -50px;
+}
+
+h1{
+    margin-bottom: 60px;
+}
+
+#objet{
+    margin-top: -10px;
+}
+
+/* Gérer le positionnement du mode de transport adéquat */
+
+#objet strong{
+    margin-left: 70px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* Gérer le positionnement du temps de voyage selon le mode de transport choisit */
+
+#temps{
+    margin-top: 10px;
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+#temps strong{
+    margin-left: 19px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+h1,
+.tableau, 
+#objet,
+#temps{
+    font-family: 'Didact Gothic', sans-serif;
+    font-style: italic;
+}

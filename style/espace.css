@@ -1,0 +1,58 @@
+/****** SECOND PAGE *****/
+
+/* Decoration de nos liens */
+
+.navigation a{
+    text-decoration: none;
+    color:black
+}
+
+/* Positionnement de notre TEXTE / LUNE */
+
+header a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Courgette', cursive;
+    font-size: 15px;
+}
+
+header a:nth-child(2){
+    font-family: 'Courgette', cursive;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+/* Créer un trait horizontale sur la page + éviter les collisions */
+
+header{
+    display: flex;
+    border-bottom: 2px solid black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Display nos éléments ul les uns à coté des autres */
+
+header .navigation ul{
+    display: flex;
+}
+
+/* Gérer l'espace entre chaque mot de la navigation */
+
+.navigation ul a{
+    margin-left: 30px;
+}
+
+/* Permet de rapprocher nos éléments li pret de notre logo verticalement */
+
+.navigation ul li{
+    margin-top: 15px;
+}
+
+/* Gérer le margin seulement du contenue et non l'ensemble sinon notre bordure est décalée */
+
+header a, 
+header .navigation{
+    margin-left: 5px;
+}
