@@ -2,6 +2,13 @@
 
 This website has different pages, each page has its importance. The introduction to the history of the earth-moon journey, seen from space with the earth and the planets revolving around it, then the journey, a system allowing to calculate the time to complete the journey.
 
+# Technologies
+
+- Javascript
+- HTML
+- CSS
+- WebGL
+
 # How to test
 
 1. Go to current folder of project in terminal
