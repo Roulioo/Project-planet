@@ -5,7 +5,7 @@ This website has different pages, each page has its importance. The introduction
 # How to test
 
 1. Go to current folder of project in terminal
-2. Run live-server
+2. Run "live-server"
 3. Server will be launched for me is (http://127.0.0.1:8080/)
 4. Go to your url
 5. Enjoy !
